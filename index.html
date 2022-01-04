@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de visita</title>
+</head>
+<body>
+    <h1>Meu cartão de visita</h1>
+    <p>Luciano silva</p>
+    <p id="profissao"></p>
+    <p id="DadosPessoais"></p>
+    <p id="Especialidade"></p>
+    <button onclick="funcao();">Profissão</button>
+    <button onclick="sumir();">sumir</button><br>
+    <button onclick="DadosPessoais();">DadosPessoais</button>
+    <button onclick="apagar();">apagar</button><br>
+    <button onclick="Especialidade();">Especialidade</button>
+    <button onclick="Deletar();">Deletar</button>
+    <script>
+        function funcao(){
+            document.getElementById("profissao").innerHTML = "Analista de sistemas <hr>"; 
+        }
+
+        function sumir(){
+            document.getElementById("profissao").innerHTML = "";
+        }
+        function DadosPessoais(){
+            document.getElementById("DadosPessoais").innerHTML = "RG:14.056.045-26 <br> CPF:865.812.815-01 <hr>";
+        }
+        function apagar(){
+            document.getElementById("DadosPessoais").innerHTML = "";
+        }
+        function Especialidade(){
+            document.getElementById("Especialidade").innerHTML = "HTML <br> CSS <br>PYTHON <br> JAVASCRIPT <hr>";
+        }
+        function Deletar(){
+            document.getElementById("Especialidade").innerHTML = "";
+        }
+    </script>
+    <script>
+        alert("Não compartilhavel")
+    </script>
+</body>
+</html>
